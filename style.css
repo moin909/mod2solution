@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+/*body,*/
+h2,
+h3,
+p {
+    margin: 0;
+    font-family: 'Allan';font-size: 22px;
+  }
+
+.text-centre {
+    text-align: center;
+}
+
+body{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+     }
+
+ h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white; 
+    padding: 40px;
+     background: rgb(131,58,180);
+     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+     border: 1px solid blue;
+ }
+
+h2 {
+    font-size: 1.25rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+p {
+    padding-top: 30px;
+}
+
+.container {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+
+.html {
+    background-color: pink;
+    border: 1px solid black;
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.css {
+    background-color: red;
+    border: 1px solid black;
+    width: 150px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.JavaScript {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
